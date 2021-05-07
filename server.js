@@ -8,6 +8,8 @@ const app = express();
 
 app.use(logger("dev"));
 
+app.use(require("./routes"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
